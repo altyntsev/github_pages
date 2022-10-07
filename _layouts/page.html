@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: " en" }}">
+{% include head.html %}
+<body>
+<div class="wrapper">
+    <sidebar class="sidebar" id="sidebar">
+        <ul class="navigation" id="navigation">
+            <li><a class="active" href="/">
+                root
+            </a></li>
+            <li><a class="active" href="/alt_proc/ru/main.html">
+                alt_processing (ru)
+            </a></li>
+            <li><a class="active" href="/alt_proc/en/main.html">
+                alt_processing (en)
+            </a></li>
+            <li><a class="active" href="/sputnik/ru/main.html">
+                sputnik (ru)
+            </a></li>
+            <li><a class="active" href="/sputnik/en/main.html">
+                sputnik (en)
+            </a></li>
+        </ul>
+    </sidebar>
+    <main class="content">
+        <div class="inner">
+            {{ content }}
+        </div>
+    </main>
+</div>
+{% include scripts.html %}
+</body>
+</html>
